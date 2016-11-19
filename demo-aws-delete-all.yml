@@ -27,5 +27,5 @@
       state=absent
       wait=True
     #with_items: hostvars[inventory_hostname]['ansible_ec2_instance_id'] 
-    with_items: {{hostvars[inventory_hostname]['ansible_ec2_instance_id']}}
+    with_items: "{{hostvars[inventory_hostname]['ansible_ec2_instance_id']}}"
 
