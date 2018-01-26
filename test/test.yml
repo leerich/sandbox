@@ -1,0 +1,6 @@
+---
+
+hosts: all
+
+- debug:
+    msg: "Tower Username: {{tower_user_id}}"
